@@ -158,6 +158,14 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
+	$('.infobutton').clicked(function(){
+		$('.info').toggle()
+	});
+		
+	$('.info').clicked(function(){
+		$('.info').hide()
+	});
+	  
 	$('img').mouseenter(function(){
 		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 				$(this).addClass('clicked2').removeClass('clicked1');
