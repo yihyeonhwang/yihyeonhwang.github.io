@@ -88,16 +88,15 @@ img{
 
 .info{
 	display: none;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 }
 
 .infolayer{
-	position: fixed;
-	display: flex;
-	flex-direction: column;
-
-	z-index:500;
+	background-color: black;
+	opacity: 0.5;
+	z-index:5000 !important;
 }
 
 .topbar{ /*상단바*/
@@ -112,7 +111,7 @@ img{
 p{ /*작업제목, 설명이 포함되어있음*/
 	font-family: 'Noto Sans KR', sans-serif;
 	color: white;
-
+	text-align: center;
 }
 
 #powersearch{ /*작업제목*/
