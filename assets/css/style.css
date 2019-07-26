@@ -135,7 +135,7 @@ p{ /*작업제목, 설명이 포함되어있음*/
 
 #infobutton{ /*클릭하면 작업제목과 설명이 나오는 버튼*/
 	position: fixed;
-	top: 10px;
+	bottom: 10px;
 	right: 20px;
 	width: 35px !important;
 	height: 35px !important;
