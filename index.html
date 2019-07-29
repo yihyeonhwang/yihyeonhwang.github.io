@@ -151,42 +151,24 @@
 	   
    </ul>
 </div>
-	<span id="san">San/Mononoke Hime/1997</span>
-	<span id="furiosa">Furiosa/Mad Max/2015</span>
-	<span id="abby">Abby/20th Century Women/2016</span>
-	<span id="katniss">Katniss Everdeen/The Hunger Games/2012</span>
-	<span id="nausicaa">Nausicaa/Nausicaä of the Valley of the Wind/1984</span>
-	<span id="wasp">Hope Van Dyne/Ant-Man and the Wasp/2018</span>
-	<span id="marvel">Carol Danvers/Captain Marvel/2019</span>
-	<span id="eleven">Eleven/Stranger Things 1/2016</span>
-	<span id="helen">Helen/The Incredibles 2/2018</span>
-	<span id="ladybird">Christine"Lady Bird" McPherson/Lady Bird/2018</span>
-	<span id="laura">Laura/Logan/2017</span>
-	<span id="rey">Rey/Star Wars: The Force Awakens/2015</span>
-	<span id="ghost">Ava(Ghost)/Ant-Man and the Wasp/2018</span>
-	<span id="roma">Cleo/Roma/2018</span>
-	<span id="spy">Susan Cooper/Spy/2015</span>
-	<span id="heat">Shannon Mullins/The Heat/2013</span>
-	<span id="jyn">Jyn Erso/Rogue One: A Star Wars Story/2016</span>
-	
-	<span id="sankr">산/원령공주/1997</span>
-	<span id="furiosakr">퓨리오사/매드맥스/2015</span>
-	<span id="abbykr">애비/우리들의 20세기/2016</span>
-	<span id="katnisskr">캣니스 에버딘/헝거게임/2012</span>
-	<span id="nausicaakr">나우시카/바람계곡의 나우시카/1984</span>
-	<span id="waspkr">호프 반 다인/앤트맨과 와스프/2018</span>
-	<span id="marvelkr">캐롤 댄버스/캡틴 마블/2019</span>
-	<span id="elevenkr">일레븐/기묘한 이야기 1/2016</span>
-	<span id="helenkr">헬렌/인크레더블 2/2018</span>
-	<span id="ladybirdkr">크리스틴 "레이디버드" 맥퍼스/레이디버드/2018</span>
-	<span id="laurakr">로라/로건/2017</span>
-	<span id="reykr">레이/스타워즈: 깨어난 포스/2015</span>
-	<span id="ghostkr">에이바(고스트)/앤트맨과 와스프/2018</span>
-	<span id="romakr">클레오/로마/2018</span>
-	<span id="spykr">수잔 쿠퍼/스파이/2015</span>
-	<span id="heakr">섀넌 멀린스/히트/2013</span>
-	<span id="jynkr">진 어소/로그 원: 스타워즈 스토리/2016</span>
-
+	<span id="san">산/원령공주/1997<br>San/Mononoke Hime/1997</span>
+	<span id="furiosa">퓨리오사/매드맥스/2015<br>Furiosa/Mad Max/2015</span>
+	<span id="abby">애비/우리들의 20세기/2016<br>Abby/20th Century Women/2016</span>
+	<span id="katniss">캣니스 에버딘/헝거게임/2012<br>Katniss Everdeen/The Hunger Games/2012</span>
+	<span id="nausicaa">나우시카/바람계곡의 나우시카/1984<br>Nausicaa/Nausicaä of the Valley of the Wind/1984</span>
+	<span id="wasp">호프 반 다인(와스프)/앤트맨과 와스프/2018<br>Hope Van Dyne(Wasp)/Ant-Man and the Wasp/2018</span>
+	<span id="marvel">캐롤 댄버스/캡틴 마블/2019<br>Carol Danvers/Captain Marvel/2019</span>
+	<span id="eleven">일레븐/기묘한 이야기 1/2016<br>Eleven/Stranger Things 1/2016</span>
+	<span id="helen">헬렌/인크레더블 2/2018<br>Helen/The Incredibles 2/2018</span>
+	<span id="ladybird">크리스틴 "레이디버드" 맥퍼스/레이디버드/2018<br>Christine"Lady Bird" McPherson/Lady Bird/2018</span>
+	<span id="laura">로라/로건/2017<br>Laura/Logan/2017</span>
+	<span id="rey">레이/스타워즈: 깨어난 포스/2015<br>Rey/Star Wars: The Force Awakens/2015</span>
+	<span id="ghost">에이바(고스트)/앤트맨과 와스프/2018<br>Ava(Ghost)/Ant-Man and the Wasp/2018</span>
+	<span id="roma">클레오/로마/2018<br>Cleo/Roma/2018</span>
+	<span id="spy">수잔 쿠퍼/스파이/2015<br>Susan Cooper/Spy/2015</span>
+	<span id="heat">섀넌 멀린스/히트/2013<br>Shannon Mullins/The Heat/2013</span>
+	<span id="jyn">진 어소/로그 원: 스타워즈 스토리/2016<br>Jyn Erso/Rogue One: A Star Wars Story/2016</span>
+	<span id="ebosi">에보시/원령공주/1997<br>Ebosi/Mononoke Hime/1997</span>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
 	$('#infobutton').click(function(){
@@ -219,12 +201,12 @@
 	$('#san001').click(function() {
 		if($("#san001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#san001)').addClass('bigger');
-				$('#sankr').show();
+				$('#san').show();
 				$('li').removeClass('clicked3','clicked1','clicked2','zoomout')
 				$('#san001').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#san001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#san001)').removeClass('bigger');
-				$('#sankr').hide();
+				$('#san').hide();
 				$('#san001').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -232,11 +214,11 @@
 	$('#san002').click(function() {
 		if($("#san002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#san002)').addClass('bigger');
-				$('#sankr').show();
+				$('#san').show();
 				$('#san002').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#san002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#san002)').removeClass('bigger');
-				$('#sankr').hide();
+				$('#san').hide();
 				$('#san002').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -256,11 +238,11 @@
 	$('#san004').click(function() {
 		if($("#san004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#san004)').addClass('bigger');
-				$('#sankr').show();
+				$('#san').show();
 				$('#san004').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#san004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#san004)').removeClass('bigger');
-				$('#sankr').hide();
+				$('#san').hide();
 				$('#san004').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -268,11 +250,11 @@
 	$('#furiosa001').click(function() {
 		if($("#furiosa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa001)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa001').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa001)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa001').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -280,11 +262,11 @@
 	$('#furiosa002').click(function() {
 		if($("#furiosa002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa002)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa002').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa002)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa002').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -292,11 +274,11 @@
 	$('#furiosa003').click(function() {
 		if($("#furiosa003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa003)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa003').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa003)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa003').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -304,11 +286,11 @@
 	$('#furiosa004').click(function() {
 		if($("#furiosa004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa004)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa004').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa004)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa004').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -316,11 +298,11 @@
 	$('#furiosa005').click(function() {
 		if($("#furiosa005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa005)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa005').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa005)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa005').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -328,11 +310,11 @@
 	$('#furiosa006').click(function() {
 		if($("#furiosa006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#furiosa006)').addClass('bigger');
-				$('#furiosakr').show();
+				$('#furiosa').show();
 				$('#furiosa006').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#furiosa006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#furiosa006)').removeClass('bigger');
-				$('#furiosakr').hide();
+				$('#furiosa').hide();
 				$('#furiosa006').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -340,11 +322,11 @@
 	$('#abby001').click(function() {
 		if($("#abby001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#abby001)').addClass('bigger');
-				$('#abbykr').show();
+				$('#abby').show();
 				$('#abby001').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#abby001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#abby001)').removeClass('bigger');
-				$('#abbykr').hide();
+				$('#abby').hide();
 				$('#abby001').removeClass('zoomout').addClass('clicked3');
 			}
 	});
@@ -352,11 +334,11 @@
 	$('#abby002').click(function() {
 			if($("#abby002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 				$('li:has(#abby002)').addClass('bigger');
-				$('#abbykr').show();
+				$('#abby').show();
 				$('#abby002').removeClass('clicked3').addClass('zoomout');
 			}else if($("li:has(#abby002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 				$('li:has(#abby002)').removeClass('bigger');
-				$('#abbykr').hide();
+				$('#abby').hide();
 				$('#abby002').removeClass('zoomout').addClass('clicked3');
 			}
 	});
