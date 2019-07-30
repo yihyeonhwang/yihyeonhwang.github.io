@@ -1,0 +1,209 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul,li {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/**/
+
+body{
+	background-color: black;
+}
+
+img{
+	height: auto;
+	width: 100%;
+	opacity:0.1;
+}
+
+.intro{
+	display: block;
+	position: fixed;
+	top: 47%;
+	left: 44%;
+	z-index:5000 !important;
+}
+
+.introlayer{
+	z-index:5000 !important;
+}
+
+.instruction{
+	display:none;
+	position: fixed;
+	top: 45%;
+	left: 38%;
+	z-index:5000 !important;
+}
+
+#instructiontext{
+	font-size: 15px;
+	color:white;
+}
+
+p{ /*작업제목, 설명이 포함되어있음*/
+	color: white;
+	text-align: center;
+	color: #95A5A6;
+
+}
+
+span{
+	position:fixed;
+	bottom: 10px;
+	left: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	color:white;
+	display: none;
+	background-color: black;
+}
+
+#introtext{ /*시작할 때 뜨는 텍스트*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#infobutton{ /*클릭하면 작업제목과 설명이 나오는 버튼*/
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	width: 35px !important;
+	height: 35px !important;
+	opacity:1 !important;
+	z-index:5000 !important;
+	cursor: pointer;
+}
+
+.contents { 
+	display: flex;
+	flex-wrap: wrap;
+	padding:0;
+}
+
+.contents li {
+	display: flex;
+  	justify-content: flex-end;
+  	align-items: flex-start;
+  	position: relative;
+	padding:0;
+	z-index: 0;
+}
+
+	.notclicked{
+	}
+
+	.clicked1{
+		opacity: 0.5;
+	}
+
+	.clicked2{
+		opacity: 0.75;
+	}
+
+	.clicked3{
+
+	}
+
+	.bigger{
+		margin: auto;
+		width:81% !important;
+	}
+
+@media screen and (min-width: 300px){
+	.contents li{
+		width:33%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.contents li{
+		width:25%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	.contents li{
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.contents li{
+		width: 20% ;
+	}
+}
