@@ -1,199 +1,1546 @@
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Power Search</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
+	<div class="intro">
+		<div class="introlayer"><p id="introtext">마우스를 움직이세요.</p></div>
+	</div>
 
-ul,li {
-  list-style: none;
-}
+	<div class="instruction"><p id="instructiontext">마우스를 움직이세요.<br>선명해진 이미지를 클릭하면 이미지가 확대됩니다.</p></div>
 
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
+	<img id="infobutton" src="assets/images/questionicon.png">
 
-html {
-  box-sizing: border-box;
-}
+	<ul class="contents">
+		<li><img id="san001" class="notclicked" src="assets/images/san001.gif" title="https://i.gifer.com/78Y.gif"></li>
+		<li><img id="furiosa002" class="notclicked" src="assets/images/furiosa002.gif" title="https://i.gifer.com/9Pyn.gif"></li>
+		<li><img id="san004" class="notclicked" src="assets/images/san004.gif" title="https://31.media.tumblr.com/2931379f2bc88b7f90200519a0b4a110/tumblr_mf5ilkeUh31rbrys3o1_500.gif"></li>
+	    <li><img id="furiosa001" class="notclicked" src="assets/images/furiosa001.gif" title="https://media2.giphy.com/media/Nx8NVTYCQxJCw/source.gif"></li>
+		<li><img id="marvel004" class="notclicked" src="assets/images/marvel004.gif" title="https://data.whicdn.com/images/326300833/original.gif"></li>
+	    <li><img id="furiosa003" class="notclicked" src="assets/images/furiosa003.gif" title="https://biggiesplace.files.wordpress.com/2016/02/mm-furiosa-choke.gif"></li>  
+		<li><img id="katniss005" class="notclicked" src="assets/images/katniss005.gif" title="https://em.wattpad.com/9b71d3f276a704b7fceabaf83b62a0ebac358b01/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4d5f6a6b3245646b43397a4967673d3d2d3633313034323434352e313535343433343735376466356464613337363036313836373233322e676966?s=fit&w=720&h=720"></li>   
+	    <li><img id="san002" class="notclicked" src="assets/images/san002.gif" title="https://25.media.tumblr.com/1914ed15b4ba332800611394ff917b6f/tumblr_msazpuFXYv1r4ue86o1_500.gif"></li>
+	    <li><img id="san003" class="notclicked" src="assets/images/san003.gif" title="https://media1.giphy.com/media/l0Hly29U6evZRjTKE/giphy.gif"></li>
+		<li><img id="furiosa004" class="notclicked" src="assets/images/furiosa004.gif" title="http://forevertwentysomethings.com/wp-content/uploads/2015/10/Furiosa-gif.gif"></li>
+	    <li><img id="furiosa005" class="notclicked" src="assets/images/furiosa005.gif" title="http://33.media.tumblr.com/ef296f481d876132f63dc3cca793c03d/tumblr_nsmqgdx9801r4z8l1o5_500.gif"></li>
+	    <li><img id="furiosa006" class="notclicked" src="assets/images/furiosa006.gif" title="https://cdn-images-1.medium.com/max/1600/1*oS2Ot6AnhQ0P2MR_4tLzkw.gif"></li>
+		<li><img id="abby001" class="notclicked" src="assets/images/abby001.gif" title="https://66.media.tumblr.com/30451102d51761e255d5b93af0335011/tumblr_ot2hijgvzo1wufaiko1_500.gif"></li>
+	    <li><img id="abby002" class="notclicked" src="assets/images/abby002.gif" title="https://media1.giphy.com/media/l4Jz87hTidK270eiY/source.gif"></li>
+		<li><img id="katniss001" class="notclicked" src="assets/images/katniss001.gif" title="https://thumbs.gfycat.com/PopularSatisfiedGordonsetter-size_restricted.gif"></li>
+		<li><img id="katniss002" class="notclicked" src="assets/images/katniss002.gif" title="https://i.gifer.com/7DsG.gif"></li>   
+		<li><img id="nausicaa003" class="notclicked" src="assets/images/nausicaa003.gif" title="https://i.makeagif.com/media/5-28-2016/0EbbrQ.gif"></li>
+		<li><img id="nausicaa004" class="notclicked" src="assets/images/nausicaa004.gif" title="http://pin.anime.com/wp-content/uploads/2015/07/Animated-gif-Hayao-Miyazakis-1984-film-Nausica%C3%A4-of-the-Valley-of-the-Wind-4.gif"></li>
+		<li><img id="katniss003" class="notclicked" src="assets/images/katniss003.gif" title="https://media3.giphy.com/media/7M6MOMM1jzvLG/giphy.gif"></li>
+		<li><img id="katniss004" class="notclicked" src="assets/images/katniss004.gif" title="https://37.media.tumblr.com/b74da6f5267e9c0a26d54963f05665fd/tumblr_n2nj3w8FBY1tuwwxwo1_500.gif"></li>
+		<li><img id="katniss006" class="notclicked" src="assets/images/katniss006.gif" title="https://thumbs.gfycat.com/SarcasticWhiteJenny-small.gif"></li> 
+		<li><img id="nausicaa001" class="notclicked" src="assets/images/nausicaa001.gif" title="http://file3.instiz.net/data/file3/2018/01/29/3/1/5/3157de5e1bd1aa5ad1201ef8b809f70d.gif"></li>
+		<li><img id="nausicaa002" class="notclicked" src="assets/images/nausicaa002.gif" title="https://78.media.tumblr.com/07a99794fc812f0f5dd46944fdd5dcec/tumblr_ovuhwigSXY1wnnbh0o1_500.gif"></li>
+		<li><img id="nausicaa005" class="notclicked" src="assets/images/nausicaa005.gif" title="https://4.bp.blogspot.com/-kxDdJlFQ07I/W2WfonCqhPI/AAAAAAAAW0w/JSgOcCUU0M8IEy_cjvQU-vPTNvxRcsVNgCLcBGAs/s1600/tumblr_otq0tkprYS1tndn6wo1_500.gif"></li>
+		<li><img id="nausicaa006" class="notclicked" src="assets/images/nausicaa006.gif" title="https://i.gifer.com/KB1T.gif"></li>
+		<li><img id="nausicaa007" class="notclicked" src="assets/images/nausicaa007.gif" title="https://25.media.tumblr.com/eccb10031599c0cc234e145ac220dc45/tumblr_mg8iqc0jwQ1r9fil7o1_500.gif"></li>
+		<li><img id="wasp001" class="notclicked" src="assets/images/wasp001.gif" title="https://thumbs.gfycat.com/GargantuanNaturalBufflehead-size_restricted.gif"></li>   
+		<li><img id="roma004" class="notclicked" src="assets/images/roma004.gif" title="https://66.media.tumblr.com/767d85b7c8857c8528bae0d253bc6b0b/tumblr_pjrj84e3rm1tk2heto2_500.gif"></li>   
+		<li><img id="wasp002" class="notclicked" src="assets/images/wasp002.gif" title="https://img.buzzfeed.com/buzzfeed-static/static/2018-01/30/12/asset/buzzfeed-prod-fastlane-01/anigif_sub-buzz-7480-1517334795-1.gif"></li>   
+		<li><img id="rey005" class="notclicked" src="assets/images/rey005.gif" title="http://images6.fanpop.com/image/photos/39100000/Reylo-by-leonsringtrick-tumblr-kylo-ren-and-rey-39179252-500-201.gif"></li>
+		<li><img id="rey006" class="notclicked" src="assets/images/rey006.gif" title="https://media2.giphy.com/media/xUA7aNZtLbxEaNAYww/giphy.gif"></li>   
+		<li><img id="wasp003" class="notclicked" src="assets/images/wasp003.gif" title="https://thumbs.gfycat.com/ExhaustedEveryHalcyon-max-1mb.gif"></li>
+		<li><img id="wasp004" class="notclicked" src="assets/images/wasp004.gif" title="https://thumbs.gfycat.com/WideeyedGoodnaturedKillerwhale-max-1mb.gif"></li>   
+		<li><img id="eleven002" class="notclicked" src="assets/images/eleven002.gif" title="https://data.whicdn.com/images/254277299/original.gif"></li>
+		<li><img id="marvel001" class="notclicked" src="assets/images/marvel001.gif" title="https://data.whicdn.com/images/323646043/original.gif"></li>
+		<li><img id="marvel002" class="notclicked" src="assets/images/marvel002.gif" title="https://thumbs.gfycat.com/DrearyShinyKusimanse-size_restricted.gif"></li>
+		<li><img id="eleven003" class="notclicked" src="assets/images/eleven003.gif" title="https://media1.tenor.com/images/72d2855d5afba8b78aeff662aa421050/tenor.gif"></li>   
+		<li><img id="marvel003" class="notclicked" src="assets/images/marvel003.gif" title="https://66.media.tumblr.com/40cff1c9266a054e8a7f7793aa363071/tumblr_pj6zbun1mT1ubn6jto2_500.gif"></li>
+		<li><img id="heat002" class="notclicked" src="assets/images/heat002.gif" title="https://media.giphy.com/media/11KCaQSludjZOU/giphy.gif"></li>   
+		<li><img id="marvel005" class="notclicked" src="assets/images/marvel005.gif" title="https://asthebunnyhops.com/wp-content/uploads/2018/12/Captain-Marvel-Flying.gif"></li>
+		<li><img id="eleven001" class="notclicked" src="assets/images/eleven001.gif" title="https://media.giphy.com/media/3ohhwhjxmrQwLXJFgk/giphy.gif"></li>
+		<li><img id="eleven004" class="notclicked" src="assets/images/eleven004.gif" title="https://media1.popsugar-assets.com/files/thumbor/-9en1U3T5BX8Ep6rhW8GJHCt1wI/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/10/27/151/n/41306527/tmp_AhZZ4t_5c22486adf530c07_eleven.gif"></li>
+		<li><img id="helen001" class="notclicked" src="assets/images/helen001.gif" title="https://d1puqth05stfz1.cloudfront.net/wp-content/uploads/2019/02/Female-Superheroes-in-Pop-Culture-Elastigirl-The-Incredibles.gif"></li>
+		<li><img id="helen002" class="notclicked" src="assets/images/helen002.gif" title="https://healed1337.files.wordpress.com/2018/07/disloyalweepyimperatorangel-max-1mb.gif"></li>
+		<li><img id="helen003" class="notclicked" src="assets/images/helen003.gif" title="https://i.pinimg.com/originals/4a/40/8e/4a408e5ea6195407910e53cfa5c242f5.gif"></li>
+		<li><img id="ladybird001" class="notclicked" src="assets/images/ladybird001.gif" title="http://78.media.tumblr.com/2dd1a7bcf22d09c077bcfbc02f22d9cc/tumblr_p1l8qn62Vv1rvr4jho1_500.gif"></li>
+		<li><img id="rey002" class="notclicked" src="assets/images/rey002.gif" title="https://akns-images.eonline.com/eol_images/Entire_Site/2016316/rs_500x200-160416072225-500-rey-kylo-ren-star-wars-the-force-awakens-2-041616.gif?fit=inside|900:auto&output-quality=90"></li>
+		<li><img id="rey003" class="notclicked" src="assets/images/rey003.gif" title="https://hips.hearstapps.com/digitalspyuk.cdnds.net/18/10/1520434009-ezgifcom-optimize-3.gif"></li>
+		<li><img id="ladybird002" class="notclicked" src="assets/images/ladybird002.gif" title="https://media.giphy.com/media/3ov9jLSzpmsGIG1kcM/giphy.gif"></li>
+		<li><img id="laura001" class="notclicked" src="assets/images/laura001.gif" title="https://media0.giphy.com/media/HtArFbN11JNks/giphy.gif"></li>
+		<li><img id="laura002" class="notclicked" src="assets/images/laura002.gif" title="https://lilgripes.files.wordpress.com/2017/03/5503104-7475642057-oct-2.gif"></li>
+		<li><img id="laura003" class="notclicked" src="assets/images/laura003.gif" title="https://fsmedia.imgix.net/49/a8/01/8f/c9e5/4b13/8b85/1f81f24bb1d6/x23gif.gif#image"></li>
+		<li><img id="rey001" class="notclicked" src="assets/images/rey001.gif" title="https://i.kym-cdn.com/photos/images/original/001/117/176/05f.gif"></li>
+		<li><img id="rey004" class="notclicked" src="assets/images/rey004.gif" title="https://media1.giphy.com/media/l1J9KJE8BKO09QTzW/source.gif"></li>
+		<li><img id="rey007" class="notclicked" src="assets/images/rey007.gif" title="https://media.giphy.com/media/3owzWiSUh7p16nWiNW/giphy.gif"></li>
+		<li><img id="rey008" class="notclicked" src="assets/images/rey008.gif" title="https://i.imgur.com/TrocDLe.gif"></li>   
+		<li><img id="ghost001" class="notclicked" src="assets/images/ghost001.gif" title="https://media.giphy.com/media/fQxRVClMQ6tb7oGQYT/giphy.gif"></li>
+		<li><img id="ghost002" class="notclicked" src="assets/images/ghost002.gif" title="https://i.imgur.com/IdhHliQ.gif"></li>
+		<li><img id="ghost003" class="notclicked" src="assets/images/ghost003.gif" title="https://66.media.tumblr.com/163afdb90f2ffdbfd79e1c2ac4c3d8bc/tumblr_p81xl6cNpX1t4wjzko1_r2_500.gif"></li>
+		<li><img id="roma001" class="notclicked" src="assets/images/roma001.gif" title="https://hiltonhead29928.files.wordpress.com/2019/02/roma-ocean-gif.gif"></li>
+		<li><img id="roma002" class="notclicked" src="assets/images/roma002.gif" title="https://66.media.tumblr.com/5b0c0f0c7f86af886395ed583e11871a/tumblr_pkfi1sBEBx1qitfr2o6_500.gif"></li>
+		<li><img id="roma003" class="notclicked" src="assets/images/roma003.gif" title="http://www.simbasible.com/wp-content/uploads/2018/12/1-8.gif"></li>
+		<li><img id="spy001" class="notclicked" src="assets/images/spy001.gif" title="https://moviesfilmsandflix.files.wordpress.com/2016/10/spy-gif.gif"></li>
+		<li><img id="spy002" class="notclicked" src="assets/images/spy002.gif" title="http://www.cultjer.com/img/ug_gif/2015_09/16637420150929193613.gif"></li>
+		<li><img id="spy003" class="notclicked" src="assets/images/spy003.gif" title="https://media2.giphy.com/media/z888fOIzUka9G/giphy.gif"></li>
+		<li><img id="heat001" class="notclicked" src="assets/images/heat001.gif" title="https://67.media.tumblr.com/3581dd5fba002553c3f3d593548de252/tumblr_oeijtbSZzr1sj88vto6_500.gif"></li>
+		<li><img id="shannon001" class="notclicked" src="assets/images/heat003.gif" title="https://media3.giphy.com/media/ZSR4uLiW1MnOU/giphy.gif"></li>
+		<li><img id="jyn001" class="notclicked" src="assets/images/jyn001.gif" title="http://68.media.tumblr.com/ca600793621ddc6fbbd53643585c3caa/tumblr_oeolm024EK1s6w6foo1_500.gif"></li>
+		<li><img id="jyn002" class="notclicked" src="assets/images/jyn002.gif" title="https://starwarsbu.com/wp-content/uploads/2017/08/46.gif"></li>
+		<li><img id="jyn003" class="notclicked" src="assets/images/jyn003.gif" title="https://data.whicdn.com/images/270743663/original.gif"></li>
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+		<li><img id="abby003" class="notclicked" src="assets/images/abby003.gif" title="https://media3.giphy.com/media/3o7TKy7tc2faFkzRtu/giphy.gif"></li>
+		<li><img id="ebosi001" class="notclicked" src="assets/images/ebosi001.gif" title="https://66.media.tumblr.com/0b1e92e50b0ff115c1241a28a25477d4/tumblr_oss15o7K8T1ui7oe1o1_400.gif"></li>
+		<li><img id="ebosi002" class="notclicked" src="assets/images/ebosi002.gif" title="https://i.makeagif.com/media/11-02-2016/o8OGND.gif"></li>
+		<li><img id="ebosi003" class="notclicked" src="assets/images/ebosi003.gif" title="https://66.media.tumblr.com/tumblr_m7hq5orMLh1rbidupo1_500.gif"></li>
+		<li><img id="ebosi004" class="notclicked" src="assets/images/ebosi004.gif" title="https://img.buzzfeed.com/buzzfeed-static/static/2014-02/enhanced/webdr08/19/9/anigif_enhanced-29769-1392820784-27.gif?downsize=700:*&output-format=auto&output-quality=auto"></li>
+		<li><img id="eleven005" class="notclicked" src="assets/images/eleven005.gif" title="https://media0.giphy.com/media/3o7TKWGeSdcJpJC9Wg/giphy.gif"></li>
+		<li><img id="helen004" class="notclicked" src="assets/images/helen004.gif" title="https://thumbs.gfycat.com/MatureWellinformedIguana-max-1mb.gif"></li>
+		<li><img id="jyn004" class="notclicked" src="assets/images/jyn004.gif" title="https://66.media.tumblr.com/b717462cb18515e1c126bbb1812e325c/tumblr_pl1jewNVRH1uypt0go4_500.gif"></li>
+		<li><img id="jyn005" class="notclicked" src="assets/images/jyn005.gif" title="https://thumbs.gfycat.com/FixedWateryBudgie-size_restricted.gif"></li>
+		<li><img id="jyn006" class="notclicked" src="assets/images/jyn006.gif" title="https://66.media.tumblr.com/68640dd080c84a58a0725972d1bbc99d/tumblr_ondcsdERtq1qavsqho3_r3_540.gif"></li>
+		<li><img id="jyn007" class="notclicked" src="assets/images/jyn007.gif" title="https://data.whicdn.com/images/299341981/original.gif"></li>
+		<li><img id="ladybird003" class="notclicked" src="assets/images/ladybird003.gif" title="https://media3.giphy.com/media/xUOxf87xyKZNJnO9k4/giphy.gif"></li>
+		<li><img id="ladybird004" class="notclicked" src="assets/images/ladybird004.gif" title="https://em.wattpad.com/bb01db80a5fdfa26f9b067fb275dd95aec5140d4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f366f7a626a5f5052314557534f513d3d2d3536323131373134382e313532356461393835336232616438343739383037393438373335352e676966"></li>
+		<li><img id="laura004" class="notclicked" src="assets/images/laura004.gif" title="https://thumbs.gfycat.com/ThinSilverIndianjackal-size_restricted.gif"></li>
+		<li><img id="laura005" class="notclicked" src="assets/images/laura005.gif" title="https://media1.tenor.com/images/bda46c5ea81d1b2508478d5bb7edbde1/tenor.gif?itemid=8046189"></li>
+		<li><img id="laura006" class="notclicked" src="assets/images/laura006.gif" title="https://media1.tenor.com/images/9f59f01a3083d5e50fde2fba98fd3427/tenor.gif?itemid=7944838"></li>
+		<li><img id="san005" class="notclicked" src="assets/images/san005.gif" title="https://media1.giphy.com/media/H3CIOzd7GQnbq/giphy.gif"></li>
+	</ul>
 
-img,
-video {
-}
+	<span id="san">산/원령공주/1997<br>San/Mononoke Hime/1997</span>
+	<span id="furiosa">퓨리오사/매드맥스/2015<br>Furiosa/Mad Max/2015</span>
+	<span id="abby">애비/우리들의 20세기/2016<br>Abby/20th Century Women/2016</span>
+	<span id="katniss">캣니스 에버딘/헝거게임/2012<br>Katniss Everdeen/The Hunger Games/2012</span>
+	<span id="nausicaa">나우시카/바람계곡의 나우시카/1984<br>Nausicaa/Nausicaä of the Valley of the Wind/1984</span>
+	<span id="wasp">호프 반 다인(와스프)/앤트맨과 와스프/2018<br>Hope Van Dyne(Wasp)/Ant-Man and the Wasp/2018</span>
+	<span id="marvel">캐롤 댄버스/캡틴 마블/2019<br>Carol Danvers/Captain Marvel/2019</span>
+	<span id="eleven">일레븐/기묘한 이야기 1/2016<br>Eleven/Stranger Things 1/2016</span>
+	<span id="helen">헬렌/인크레더블 2/2018<br>Helen/The Incredibles 2/2018</span>
+	<span id="ladybird">크리스틴 "레이디버드" 맥퍼스/레이디버드/2018<br>Christine"Lady Bird" McPherson/Lady Bird/2018</span>
+	<span id="laura">로라/로건/2017<br>Laura/Logan/2017</span>
+	<span id="rey">레이/스타워즈: 깨어난 포스/2015<br>Rey/Star Wars: The Force Awakens/2015</span>
+	<span id="ghost">에이바(고스트)/앤트맨과 와스프/2018<br>Ava(Ghost)/Ant-Man and the Wasp/2018</span>
+	<span id="roma">클레오/로마/2018<br>Cleo/Roma/2018</span>
+	<span id="spy">수잔 쿠퍼/스파이/2015<br>Susan Cooper/Spy/2015</span>
+	<span id="heat">사라 애쉬번/히트/2013<br>Sarah Ashburn/The Heat/2013</span>
+	<span id="shannon">섀넌 멀린스/히트/2013<br>Shannon Mullins/The Heat/2013</span>
+	<span id="jyn">진 어소/로그 원: 스타워즈 스토리/2016<br>Jyn Erso/Rogue One: A Star Wars Story/2016</span>
+	<span id="ebosi">에보시/원령공주/1997<br>Ebosi/Mononoke Hime/1997</span>
 
-iframe {
-  border: 0;
-}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	
+	$('img').mouseenter(function(){
+		$('.instruction').hide();//설명 텍스트 숨기기
+		if($(this).hasClass("clicked1")==true){ //만약 이미지에 두 번 마우스를 올렸을 때
+				$(this).addClass('clicked2').removeClass('clicked1');//clicked1 제거, clicked2 추가
+				$(this).css('cursor','default');
+			}else if($(this).hasClass("clicked2")==true){ //만약 이미지에 세 번 마우스를 올렸을 때
+				$(this).addClass('clicked3').removeClass('clicked2'); //clicked2 제거, clicked3 추가
+				$(this).css('opacity','1');//이미지의 투명도 1로 변경
+				$(this).css('cursor','default');
+			}else if($(this).hasClass("clicked3")==true){
+				$(this).removeClass('notclicked','clicked1','clicked2');
+				$(this).css('cursor','zoom-in');
+			}else if($(this).hasClass("notclicked")==true){ //이 모든 경우가 아니고 처음 이미지에 마우스를 올린다면
+				$(this).addClass('clicked1').removeClass('notclicked');//notclicked를 제거, clicked1을 추가
+				$('.intro').hide();//첫화면 숨기기
+				$('#infobutton').show();//설명 버튼 보이기
+				$(this).css('cursor','default');
+			}
+	});
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+	$('#infobutton').click(function(){
+		$('#infobutton').removeClass('clicked1,clicked2,clicked3');
+		$('.instruction').toggle();
+	});
 
-td,
-th {
-  padding: 0;
-  text-align: left;
-}
+	$('#san001').click(function() {
+		if($("#san001").hasClass("clicked3")==true){ //만약 이미지에 세 번 마우스를 올리고 클릭하면
+			$('li').removeClass('bigger');//모든 li 에서 .bigger 제거
+			$('li:has(#san001)').addClass('bigger');// li:has(#san001)에만 .bigger 추가
+			$('#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');//#san001을 제외한 모든 이미지에 .notclicked 추가하기
+			$('span').hide();//모든 캐릭터 이름, 영화제목, 개봉년도 숨기기
+			$('#san').show();//san 캐릭터 이름, 영화제목, 개봉년도 보이기
+			$('#san001').removeClass('clicked3');//.clicked3 제거
+			$('#san001').css('cursor','zoom-out');
+		}else if($("li:has(#san001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#san001)').removeClass('bigger');//.bigger 제거
+			$('#san').hide();//san 캐릭터 이름, 영화제목, 개봉년도 숨기기
+			$('#san001').addClass('clicked3');//#san001에 .clicked3 추가하기
+		}
+	});
+	
+	$('#san002').click(function() {
+		if($("#san002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#san002)').addClass('bigger');
+			$('#san001,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#san').show();
+			$('#san002').removeClass('clicked3');
+			$('#san002').css('cursor','zoom-out');
+		}else if($("li:has(#san002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#san002)').removeClass('bigger');
+			$('#san').hide();
+			$('#san002').addClass('clicked3');
+		}
+	});
+	
+	$('#san003').click(function() {
+		if($("#san003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#san003)').addClass('bigger');
+			$('#san001,#san002,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#san').show();
+			$('#san003').removeClass('clicked3');
+			$('#san003').css('cursor','zoom-out');
+		}else if($("li:has(#san003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#san003)').removeClass('bigger');
+			$('#san').hide();
+			$('#san003').addClass('clicked3');
+		}
+	});
+	
+	$('#san004').click(function() {
+		if($("#san004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#san004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#san').show();
+			$('#san004').removeClass('clicked3');
+			$('#san004').css('cursor','zoom-out');
+		}else if($("li:has(#san004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#san004)').removeClass('bigger');
+			$('#san').hide();
+			$('#san004').addClass('clicked3');
+		}
+	});
 
-/**/
+	$('#san005').click(function() {
+		if($("#san005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#san005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#san').show();
+			$('#san005').removeClass('clicked3');
+			$('#san005').css('cursor','zoom-out');
+		}else if($("li:has(#san005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#san005)').removeClass('bigger');
+			$('#san').hide();
+			$('#san005').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa001').click(function() {
+		if($("#furiosa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa001').removeClass('clicked3');
+			$('#furiosa001').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa001)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa001').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa002').click(function() {
+		if($("#furiosa002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa002').removeClass('clicked3');
+			$('#furiosa002').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa002)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa002').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa003').click(function() {
+		if($("#furiosa003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa004,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa003').removeClass('clicked3');
+			$('#furiosa003').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa003)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa003').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa004').click(function() {
+		if($("#furiosa004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa005,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa004').removeClass('clicked3');
+			$('#furiosa004').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa004)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa004').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa005').click(function() {
+		if($("#furiosa005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa006,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa005').removeClass('clicked3');
+			$('#furiosa005').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa005)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa005').addClass('clicked3');
+		}
+	});
+	
+	$('#furiosa006').click(function() {
+		if($("#furiosa006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#furiosa').show();
+			$('#furiosa006').removeClass('clicked3');
+			$('#furiosa006').css('cursor','zoom-out');
+		}else if($("li:has(#furiosa006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#furiosa006)').removeClass('bigger');
+			$('#furiosa').hide();
+			$('#furiosa006').addClass('clicked3');
+		}
+	});
 
-body{
-	background-color: black;
-}
 
-img{
-	height: auto;
-	width: 100%;
-	opacity:0.1;
-}
-
-.intro{
-	display: block;
-	position: fixed;
-	top: 45%;
-	left: 38%;
-	z-index:5000 !important;
-}
-
-.introlayer{
-	z-index:5000 !important;
-}
+//---------------------------------------------------//
 
 
-p{ /*작업제목, 설명이 포함되어있음*/
-	color: white;
-	text-align: center;
-	color: #95A5A6;
+	$('#abby001').click(function() {
+		if($("#abby001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#abby001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#abby').show();
+			$('#abby001').removeClass('clicked3');
+			$('#abby001').css('cursor','zoom-out');
+		}else if($("li:has(#abby001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#abby001)').removeClass('bigger');
+			$('#abby').hide();
+			$('#abby001').addClass('clicked3');
+		}
+	});
+	
+	$('#abby002').click(function() {
+		if($("#abby002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#abby002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#furiosa006,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#abby').show();
+			$('#abby002').removeClass('clicked3');
+			$('#abby002').css('cursor','zoom-out');
+		}else if($("li:has(#abby002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#abby002)').removeClass('bigger');
+			$('#abby').hide();
+			$('#abby002').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss001').click(function() {
+		if($("#katniss001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#furiosa006,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss001').removeClass('clicked3');
+			$('#katniss001').css('cursor','zoom-out');
+		}else if($("li:has(#katniss001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss001)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss001').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss002').click(function() {
+		if($("#katniss002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#furiosa006,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss002').removeClass('clicked3');
+			$('#katniss002').css('cursor','zoom-out');
+		}else if($("li:has(#katniss002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss002)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss002').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss003').click(function() {
+		if($("#katniss003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#furiosa006,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss003').removeClass('clicked3');
+			$('#katniss003').css('cursor','zoom-out');
+		}else if($("li:has(#katniss003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss003)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss003').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss004').click(function() {
+		if($("#katniss004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#furiosa006,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss004').removeClass('clicked3');
+			$('#katniss004').css('cursor','zoom-out');
+		}else if($("li:has(#katniss004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss004)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss004').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss005').click(function() {
+		if($("#katniss005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#furiosa006,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss005').removeClass('clicked3');
+			$('#katniss005').css('cursor','zoom-out');
+		}else if($("li:has(#katniss005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss005)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss005').addClass('clicked3');
+		}
+	});
+	
+	$('#katniss006').click(function() {
+		if($("#katniss006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#katniss006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#furiosa006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#katniss').show();
+			$('#katniss006').removeClass('clicked3');
+			$('#katniss006').css('cursor','zoom-out');
+		}else if($("li:has(#katniss006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#katniss006)').removeClass('bigger');
+			$('#katniss').hide();
+			$('#katniss006').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa001').click(function() {
+		if($("#nausicaa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#furiosa006,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa001').removeClass('clicked3');
+			$('#nausicaa001').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa001)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa001').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa002').click(function() {
+		if($("#nausicaa002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#furiosa006,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa002').removeClass('clicked3');
+			$('#nausicaa002').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa002)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa002').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa003').click(function() {
+		if($("#nausicaa003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#furiosa006,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa003').removeClass('clicked3');
+			$('#nausicaa003').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa003)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa003').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa004').click(function() {
+		if($("#nausicaa004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#furiosa006,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa004').removeClass('clicked3');
+			$('#nausicaa004').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa004)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa004').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa005').click(function() {
+		if($("#nausicaa005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#furiosa006,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa005').removeClass('clicked3');
+			$('#nausicaa005').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa005)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa005').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa006').click(function() {
+		if($("#nausicaa006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#furiosa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa006').removeClass('clicked3');
+			$('#nausicaa006').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa006)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa006').addClass('clicked3');
+		}
+	});
+	
+	$('#nausicaa007').click(function() {
+		if($("#nausicaa007").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#nausicaa007)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#furiosa006,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#nausicaa').show();
+			$('#nausicaa007').removeClass('clicked3');
+			$('#nausicaa007').css('cursor','zoom-out');
+		}else if($("li:has(#nausicaa007)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#nausicaa007)').removeClass('bigger');
+			$('#nausicaa').hide();
+			$('#nausicaa007').addClass('clicked3');
+		}
+	});
+	
+	$('#wasp001').click(function() {
+		if($("#wasp001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#wasp001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#furiosa006,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#wasp').show();
+			$('#wasp001').removeClass('clicked3');
+			$('#wasp001').css('cursor','zoom-out');
+		}else if($("li:has(#wasp001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#wasp001)').removeClass('bigger');
+			$('#wasp').hide();
+			$('#wasp001').addClass('clicked3');
+		}
+	});
+	
+	$('#wasp002').click(function() {
+		if($("#wasp002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#wasp002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#furiosa006,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#wasp').show();
+			$('#wasp002').removeClass('clicked3');
+			$('#wasp002').css('cursor','zoom-out');
+		}else if($("li:has(#wasp002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#wasp002)').removeClass('bigger');
+			$('#wasp').hide();
+			$('#wasp002').addClass('clicked3');
+		}
+	});
+	
+	$('#wasp003').click(function() {
+		if($("#wasp003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#wasp003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#furiosa006,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#wasp').show();
+			$('#wasp003').removeClass('clicked3');
+			$('#wasp003').css('cursor','zoom-out');
+		}else if($("li:has(#wasp003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#wasp003)').removeClass('bigger');
+			$('#wasp').hide();
+			$('#wasp003').addClass('clicked3');
+		}
+	});
+	
+	$('#wasp004').click(function() {
+		if($("#wasp004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#wasp004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#furiosa006,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#wasp').show();
+			$('#wasp004').removeClass('clicked3');
+			$('#wasp004').css('cursor','zoom-out');
+		}else if($("li:has(#wasp004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#wasp004)').removeClass('bigger');
+			$('#wasp').hide();
+			$('#wasp004').addClass('clicked3');
+		}
+	});
+			
+	$('#marvel001').click(function() {
+		if($("#marvel001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#marvel001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#furiosa006,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#marvel').show();
+			$('#marvel001').removeClass('clicked3');
+			$('#marvel001').css('cursor','zoom-out');
+		}else if($("li:has(#marvel001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#marvel001)').removeClass('bigger');
+			$('#marvel').hide();
+			$('#marvel001').addClass('clicked3');
+		}
+	});
+	
+	$('#marvel002').click(function() {
+		if($("#marvel002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#marvel002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#furiosa006,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#marvel').show();
+			$('#marvel002').removeClass('clicked3');
+			$('#marvel002').css('cursor','zoom-out');
+		}else if($("li:has(#marvel002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#marvel002)').removeClass('bigger');
+			$('#marvel').hide();
+			$('#marvel002').addClass('clicked3');
+		}
+	});
+	
+	$('#marvel003').click(function() {
+		if($("#marvel003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#furiosa006,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#marvel').show();
+			$('#marvel003').removeClass('clicked3');
+			$('#marvel003').css('cursor','zoom-out');
+		}else if($("li:has(#marvel003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#marvel003)').removeClass('bigger');
+			$('#marvel').hide();
+			$('#marvel003').addClass('clicked3');
+		}
+	});
+	
+	$('#marvel004').click(function() {
+		if($("#marvel004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#marvel004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#furiosa006,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#marvel').show();
+			$('#marvel004').removeClass('clicked3');
+			$('#marvel004').css('cursor','zoom-out');
+		}else if($("li:has(#marvel004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#marvel004)').removeClass('bigger');
+			$('#marvel').hide();
+			$('#marvel004').addClass('clicked3');
+		}
+	});
+	
+	$('#marvel005').click(function() {
+		if($("#marvel005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#marvel005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#furiosa006,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#marvel').show();
+			$('#marvel005').removeClass('clicked3');
+			$('#marvel005').css('cursor','zoom-out');
+		}else if($("li:has(#marvel005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#marvel005)').removeClass('bigger');
+			$('#marvel').hide();
+			$('#marvel005').addClass('clicked3');
+		}
+	});
+	
+	$('#eleven001').click(function() {
+		if($("#eleven001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#eleven001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#furiosa006,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#eleven').show();
+			$('#eleven001').removeClass('clicked3');
+			$('#eleven001').css('cursor','zoom-out');
+		}else if($("li:has(#eleven001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#eleven001)').removeClass('bigger');
+			$('#eleven').hide();
+			$('#eleven001').addClass('clicked3');
+		}
+	});
+	
+	$('#eleven002').click(function() {
+		if($("#eleven002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#eleven002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#furiosa006,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#eleven').show();
+			$('#eleven002').removeClass('clicked3');
+			$('#eleven002').css('cursor','zoom-out');
+		}else if($("li:has(#eleven002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#eleven002)').removeClass('bigger');
+			$('#eleven').hide();
+			$('#eleven002').addClass('clicked3');
+		}
+	});
+	
+	$('#eleven003').click(function() {
+		if($("#eleven003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#eleven003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#furiosa006,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#eleven').show();
+			$('#eleven003').removeClass('clicked3');
+			$('#eleven003').css('cursor','zoom-out');
+		}else if($("li:has(#eleven003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#eleven003)').removeClass('bigger');
+			$('#eleven').hide();
+			$('#eleven003').addClass('clicked3');
+		}
+	});
+	
+	$('#eleven004').click(function() {
+		if($("#eleven004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#eleven004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#furiosa006,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#eleven').show();
+			$('#eleven004').removeClass('clicked3');
+			$('#eleven004').css('cursor','zoom-out');
+		}else if($("li:has(#eleven004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#eleven004)').removeClass('bigger');
+			$('#eleven').hide();
+			$('#eleven004').addClass('clicked3');
+		}
+	});
 
-}
+	$('#eleven005').click(function() {
+		if($("#eleven005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#eleven005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#furiosa006,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#eleven').show();
+			$('#eleven005').removeClass('clicked3');
+			$('#eleven005').css('cursor','zoom-out');
+		}else if($("li:has(#eleven005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#eleven005)').removeClass('bigger');
+			$('#eleven').hide();
+			$('#eleven005').addClass('clicked3');
+		}
+	});
+	
+	$('#helen001').click(function() {
+		if($("#helen001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#helen001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#furiosa006,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#helen').show();
+			$('#helen001').removeClass('clicked3');
+			$('#helen001').css('cursor','zoom-out');
+		}else if($("li:has(#helen001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#helen001)').removeClass('bigger');
+			$('#helen').hide();
+			$('#helen001').addClass('clicked3');
+		}
+	});
+	
+	$('#helen002').click(function() {
+		if($("#helen002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#helen002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#furiosa006,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#helen').show();
+			$('#helen002').removeClass('clicked3');
+			$('#helen002').css('cursor','zoom-out');
+		}else if($("li:has(#helen002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#helen002)').removeClass('bigger');
+			$('#helen').hide();
+			$('#helen002').addClass('clicked3');
+		}
+	});
+	
+	$('#helen003').click(function() {
+		if($("#helen003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#helen003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#furiosa006,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#helen').show();
+			$('#helen003').removeClass('clicked3');
+			$('#helen003').css('cursor','zoom-out');
+		}else if($("li:has(#helen003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#helen003)').removeClass('bigger');
+			$('#helen').hide();
+			$('#helen003').addClass('clicked3');
+		}
+	});
 
-span{
-	position:fixed;
-	bottom: 10px;
-	left: 10px;
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 30px;
-	color:white;
-	display: none;
-	background-color: black;
-}
+	$('#helen004').click(function() {
+		if($("#helen004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#helen004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#furiosa006,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#helen').show();
+			$('#helen004').removeClass('clicked3');
+			$('#helen004').css('cursor','zoom-out');
+		}else if($("li:has(#helen004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#helen004)').removeClass('bigger');
+			$('#helen').hide();
+			$('#helen004').addClass('clicked3');
+		}
+	});
+	
+	$('#ladybird001').click(function() {
+		if($("#ladybird001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ladybird001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#furiosa006,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ladybird').show();
+			$('#ladybird001').removeClass('clicked3');
+			$('#ladybird001').css('cursor','zoom-out');
+		}else if($("li:has(#ladybird001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ladybird001)').removeClass('bigger');
+			$('#ladybird').hide();
+			$('#ladybird001').addClass('clicked3');
+		}
+	});
+	
+	$('#ladybird002').click(function() {
+		if($("#ladybird002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ladybird002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#furiosa006,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ladybird').show();
+			$('#ladybird002').removeClass('clicked3');
+			$('#ladybird002').css('cursor','zoom-out');
+		}else if($("li:has(#ladybird002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ladybird002)').removeClass('bigger');
+			$('#ladybird').hide();
+			$('#ladybird002').addClass('clicked3');
+		}
+	});
 
-#introtext{ /*시작할 때 뜨는 텍스트*/
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	font-size: 15px;
-	padding-top: 10px;
-	padding-left: 20px;
-}
+	$('#ladybird003').click(function() {
+		if($("#ladybird003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ladybird003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#furiosa006,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ladybird').show();
+			$('#ladybird003').removeClass('clicked3');
+			$('#ladybird003').css('cursor','zoom-out');
+		}else if($("li:has(#ladybird003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ladybird003)').removeClass('bigger');
+			$('#ladybird').hide();
+			$('#ladybird003').addClass('clicked3');
+		}
+	});
 
-#infobutton{ /*클릭하면 작업제목과 설명이 나오는 버튼*/
-	display: none;
-	position: fixed;
-	bottom: 10px;
-	right: 20px;
-	width: 35px !important;
-	height: 35px !important;
-	opacity:1 !important;
-	z-index:5000 !important;
-	cursor: pointer;
-}
+	$('#ladybird004').click(function() {
+		if($("#ladybird004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ladybird004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#furiosa006,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ladybird').show();
+			$('#ladybird004').removeClass('clicked3');
+			$('#ladybird004').css('cursor','zoom-out');
+		}else if($("li:has(#ladybird004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ladybird004)').removeClass('bigger');
+			$('#ladybird').hide();
+			$('#ladybird004').addClass('clicked3');
+		}
+	});
 
-.contents { 
-	display: flex;
-	flex-wrap: wrap;
-	padding:0;
-}
+	
+	$('#laura001').click(function() {
+		if($("#laura001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#furiosa006,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura001').removeClass('clicked3');
+			$('#laura001').css('cursor','zoom-out');
+		}else if($("li:has(#laura001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura001)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura001').addClass('clicked3');
+		}
+	});
+	
+	$('#laura002').click(function() {
+		if($("#laura002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#furiosa006,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura002').removeClass('clicked3');
+			$('#laura002').css('cursor','zoom-out');
+		}else if($("li:has(#laura002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura002)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura002').addClass('clicked3');
+		}
+	});
+	
+	$('#laura003').click(function() {
+		if($("#laura003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#furiosa006,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura003').removeClass('clicked3');
+			$('#laura003').css('cursor','zoom-out');
+		}else if($("li:has(#laura003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura003)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura003').addClass('clicked3');
+		}
+	});
 
-.contents li {
-	display: flex;
-  	justify-content: flex-end;
-  	align-items: flex-start;
-  	position: relative;
-	padding:0;
-	z-index: 0;
-}
+	$('#laura004').click(function() {
+		if($("#laura004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#furiosa006,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura004').removeClass('clicked3');
+			$('#laura004').css('cursor','zoom-out');
+		}else if($("li:has(#laura004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura004)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura004').addClass('clicked3');
+		}
+	});
 
-	.clicked1{
-		opacity: 0.5;
-	}
+	$('#laura005').click(function() {
+		if($("#laura005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#furiosa006,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura005').removeClass('clicked3');
+			$('#laura005').css('cursor','zoom-out');
+		}else if($("li:has(#laura005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura005)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura005').addClass('clicked3');
+		}
+	});
 
-	.clicked2{
-		opacity: 0.75;
-	}
+	$('#laura006').click(function() {
+		if($("#laura006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#laura006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#furiosa006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#laura').show();
+			$('#laura006').removeClass('clicked3');
+			$('#laura006').css('cursor','zoom-out');
+		}else if($("li:has(#laura006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#laura006)').removeClass('bigger');
+			$('#laura').hide();
+			$('#laura006').addClass('clicked3');
+		}
+	});
+	
+	$('#rey001').click(function() {
+		if($("#rey001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#furiosa006,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey001').removeClass('clicked3');
+			$('#rey001').css('cursor','zoom-out');
+		}else if($("li:has(#rey001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey001)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey001').addClass('clicked3');
+		}
+	});
+	
+	$('#rey002').click(function() {
+		if($("#rey002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#furiosa006,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey002').removeClass('clicked3');
+			$('#rey002').css('cursor','zoom-out');
+		}else if($("li:has(#rey002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey002)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey002').addClass('clicked3');
+		}
+	});
+	
+	$('#rey003').click(function() {
+		if($("#rey003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#furiosa006,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey003').removeClass('clicked3');
+			$('#rey003').css('cursor','zoom-out');
+		}else if($("li:has(#rey003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey003)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey003').addClass('clicked3');
+		}
+	});
+	
+	$('#rey004').click(function() {
+		if($("#rey004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#furiosa006,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey004').removeClass('clicked3');
+			$('#rey004').css('cursor','zoom-out');
+		}else if($("li:has(#rey004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey004)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey004').addClass('clicked3');
+		}
+	});
+	
+	$('#rey005').click(function() {
+		if($("#rey005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#furiosa006,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey005').removeClass('clicked3');
+			$('#rey005').css('cursor','zoom-out');
+		}else if($("li:has(#rey005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey005)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey005').addClass('clicked3');
+		}
+	});
+	
+	$('#rey006').click(function() {
+		if($("#rey006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#furiosa006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#furiosa006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey006').removeClass('clicked3');
+			$('#rey006').css('cursor','zoom-out');
+		}else if($("li:has(#rey006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey006)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey006').addClass('clicked3');
+		}
+	});
+	
+	$('#rey007').click(function() {
+		if($("#rey007").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey007)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#furiosa006,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey007').removeClass('clicked3');
+			$('#rey007').css('cursor','zoom-out');
+		}else if($("li:has(#rey007)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey007)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey007').addClass('clicked3');
+		}
+	});
+	
+	$('#rey008').click(function() {
+		if($("#rey008").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#rey008)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#furiosa006,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#rey').show();
+			$('#rey008').removeClass('clicked3');
+			$('#rey008').css('cursor','zoom-out');
+		}else if($("li:has(#rey008)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#rey008)').removeClass('bigger');
+			$('#rey').hide();
+			$('#rey008').addClass('clicked3');
+		}
+	});
+	
+	$('#ghost001').click(function() {
+		if($("#ghost001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ghost001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#furiosa006,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ghost').show();
+			$('#ghost001').removeClass('clicked3');
+			$('#ghost001').css('cursor','zoom-out');
+		}else if($("li:has(#ghost001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ghost001)').removeClass('bigger');
+			$('#ghost').hide();
+			$('#ghost001').addClass('clicked3');
+		}
+	});
+	
+	$('#ghost002').click(function() {
+		if($("#ghost002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ghost002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#furiosa006,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ghost').show();
+			$('#ghost002').removeClass('clicked3');
+			$('#ghost002').css('cursor','zoom-out');
+		}else if($("li:has(#ghost002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ghost002)').removeClass('bigger');
+			$('#ghost').hide();
+			$('#ghost002').addClass('clicked3');
+		}
+	});
+	
+	$('#ghost003').click(function() {
+		if($("#ghost003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ghost003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#furiosa006,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ghost').show();
+			$('#ghost003').removeClass('clicked3');
+			$('#ghost003').css('cursor','zoom-out');
+		}else if($("li:has(#ghost003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ghost003)').removeClass('bigger');
+			$('#ghost').hide();
+			$('#ghost003').addClass('clicked3');
+		}
+	});
+	
+	$('#roma001').click(function() {
+		if($("#roma001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#roma001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#furiosa006,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#roma').show();
+			$('#roma001').removeClass('clicked3');
+			$('#roma001').css('cursor','zoom-out');
+		}else if($("li:has(#roma001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#roma001)').removeClass('bigger');
+			$('#roma').hide();
+			$('#roma001').addClass('clicked3');
+		}
+	});
+	
+	$('#roma002').click(function() {
+		if($("#roma002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#roma002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#furiosa006,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#roma').show();
+			$('#roma002').removeClass('clicked3');
+			$('#roma002').css('cursor','zoom-out');
+		}else if($("li:has(#roma002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#roma002)').removeClass('bigger');
+			$('#roma').hide();
+			$('#roma002').addClass('clicked3');
+		}
+	});
+	
+	$('#roma003').click(function() {
+		if($("#roma003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#roma003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#furiosa006,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#roma').show();
+			$('#roma003').removeClass('clicked3');
+			$('#roma003').css('cursor','zoom-out');
+		}else if($("li:has(#roma003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#roma003)').removeClass('bigger');
+			$('#roma').hide();
+			$('#roma003').addClass('clicked3');
+		}
+	});
+	
+	$('#roma004').click(function() {
+		if($("#roma004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#roma004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#furiosa006,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#roma').show();
+			$('#roma004').removeClass('clicked3');
+			$('#roma004').css('cursor','zoom-out');
+		}else if($("li:has(#roma004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#roma004)').removeClass('bigger');
+			$('#roma').hide();
+			$('#roma004').addClass('clicked3');
+		}
+	});
+	
+	$('#spy001').click(function() {
+		if($("#spy001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#spy001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#furiosa006,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#spy').show();
+			$('#spy001').removeClass('clicked3');
+			$('#spy001').css('cursor','zoom-out');
+		}else if($("li:has(#spy001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#spy001)').removeClass('bigger');
+			$('#spy').hide();
+			$('#spy001').addClass('clicked3');
+		}
+	});
+	
+	$('#spy002').click(function() {
+		if($("#spy002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#spy002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#furiosa006,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#spy').show();
+			$('#spy002').removeClass('clicked3');
+			$('#spy002').css('cursor','zoom-out');
+		}else if($("li:has(#spy002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#spy002)').removeClass('bigger');
+			$('#spy').hide();
+			$('#spy002').addClass('clicked3');
+		}
+	});
+	
+	$('#spy003').click(function() {
+		if($("#spy003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#spy003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#furiosa006,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#spy').show();
+			$('#spy003').removeClass('clicked3');
+			$('#spy003').css('cursor','zoom-out');
+		}else if($("li:has(#spy003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#spy003)').removeClass('bigger');
+			$('#spy').hide();
+			$('#spy003').addClass('clicked3');
+		}
+	});
+	
+	$('#heat001').click(function() {
+		if($("#heat001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#heat001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#furiosa006,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#heat').show();
+			$('#heat001').removeClass('clicked3');
+			$('#heat001').css('cursor','zoom-out');
+		}else if($("li:has(#heat001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#heat001)').removeClass('bigger');
+			$('#heat').hide();
+			$('#heat001').addClass('clicked3');
+		}
+	});
+	
+	$('#heat002').click(function() {
+		if($("#heat002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#heat002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#furiosa006,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#heat').show();
+			$('#heat002').removeClass('clicked3');
+			$('#heat002').css('cursor','zoom-out');
+		}else if($("li:has(#heat002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#heat002)').removeClass('bigger');
+			$('#heat').hide();
+			$('#heat002').addClass('clicked3');
+		}
+	});
+	
+	$('#shannon001').click(function() {
+		if($("#shannon001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#shannon001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#furiosa006,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#shannon').show();
+			$('#shannon001').removeClass('clicked3');
+			$('#shannon001').css('cursor','zoom-out');
+		}else if($("li:has(#shannon001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#shannon001)').removeClass('bigger');
+			$('#shannon').hide();
+			$('#shannon001').addClass('clicked3');
+		}
+	});
+			
+	$('#jyn001').click(function() {
+		if($("#jyn001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#furiosa006,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn001').removeClass('clicked3');
+			$('#jyn001').css('cursor','zoom-out');
+		}else if($("li:has(#jyn001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn001)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn001').addClass('clicked3');
+		}
+	});
+	
+	$('#jyn002').click(function() {
+		if($("#jyn001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#furiosa006,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn001').removeClass('clicked3');
+			$('#jyn001').css('cursor','zoom-out');
+		}else if($("li:has(#jyn001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn001)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn001').addClass('clicked3');
+		}
+	});
+	
+	$('#jyn003').click(function() {
+		if($("#jyn003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#furiosa006,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn003').removeClass('clicked3');
+			$('#jyn003').css('cursor','zoom-out');
+		}else if($("li:has(#jyn003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn003)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn003').addClass('clicked3');
+		}
+	});
 
-	.clicked3{
-		opacity: 1;
-		cursor: zoom-in;
-	}
+	$('#jyn004').click(function() {
+		if($("#jyn004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#furiosa006,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn004').removeClass('clicked3');
+			$('#jyn004').css('cursor','zoom-out');
+		}else if($("li:has(#jyn004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn004)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn004').addClass('clicked3');
+		}
+	});
 
-	.bigger{
-		width:80% !important;
-		cursor: zoom-out;
-	}
+	$('#jyn005').click(function() {
+		if($("#jyn005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn005)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#furiosa006,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn005').removeClass('clicked3');
+			$('#jyn005').css('cursor','zoom-out');
+		}else if($("li:has(#jyn005)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn005)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn005').addClass('clicked3');
+		}
+	});
 
-	.zoomout{
-		opacity: 1;
-	}
+	$('#jyn006').click(function() {
+		if($("#jyn006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn006)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#furiosa006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn006').removeClass('clicked3');
+			$('#jyn006').css('cursor','zoom-out');
+		}else if($("li:has(#jyn006)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn006)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn006').addClass('clicked3');
+		}
+	});
 
-@media screen and (min-width: 300px){
-	.contents li{
-		width:33%;
-	}
-}
+	$('#jyn007').click(function() {
+		if($("#jyn007").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#jyn007)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#furiosa006,#ebosi001,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#jyn').show();
+			$('#jyn007').removeClass('clicked3');
+			$('#jyn007').css('cursor','zoom-out');
+		}else if($("li:has(#jyn007)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#jyn007)').removeClass('bigger');
+			$('#jyn').hide();
+			$('#jyn007').addClass('clicked3');
+		}
+	});
 
-@media screen and (min-width: 600px){
-	.contents li{
-		width:25%;
-	}
-}
+	$('#ebosi001').click(function() {
+		if($("#ebosi001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ebosi001)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#furiosa006,#ebosi002,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ebosi').show();
+			$('#ebosi001').removeClass('clicked3');
+			$('#ebosi001').css('cursor','zoom-out');
+		}else if($("li:has(#ebosi001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ebosi001)').removeClass('bigger');
+			$('#ebosi').hide();
+			$('#ebosi001').addClass('clicked3');
+		}
+	});
 
-@media screen and (min-width: 800px){
-	.contents li{
-		width: 25%;
-	}
-}
+	$('#ebosi002').click(function() {
+		if($("#ebosi002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ebosi002)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#furiosa006,#ebosi003,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ebosi').show();
+			$('#ebosi002').removeClass('clicked3');
+			$('#ebosi002').css('cursor','zoom-out');
+		}else if($("li:has(#ebosi002)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ebosi002)').removeClass('bigger');
+			$('#ebosi').hide();
+			$('#ebosi002').addClass('clicked3');
+		}
+	});
 
-@media screen and (min-width: 1200px){
-	.contents li{
-		width: 20% ;
-	}
-}
+	$('#ebosi003').click(function() {
+		if($("#ebosi003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ebosi003)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#furiosa006,#ebosi004').addClass('notclicked');
+			$('span').hide();
+			$('#ebosi').show();
+			$('#ebosi003').removeClass('clicked3');
+			$('#ebosi003').css('cursor','zoom-out');
+		}else if($("li:has(#ebosi003)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ebosi003)').removeClass('bigger');
+			$('#ebosi').hide();
+			$('#ebosi003').addClass('clicked3');
+		}
+	});
+
+	$('#ebosi004').click(function() {
+		if($("#ebosi004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li').removeClass('bigger');
+			$('li:has(#ebosi004)').addClass('bigger');
+			$('#san001,#san002,#san003,#san004,#san005,#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#abby001,#abby002,#abby003,#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006,#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007,#wasp001,#wasp002,#wasp003,#wasp004,#marvel001,#marvel002,#marvel003,#marvel004,#marvel005,#eleven001,#eleven002,#eleven003,#eleven004,#eleven005,#helen001,#helen002,#helen003,#helen004,#ladybird001,#ladybird002,#ladybird003,#ladybird004,#laura001,#laura002,#laura003,#laura004,#laura005,#laura006,#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008,#ghost001,#ghost002,#ghost003,#roma001,#roma002,#roma003,#roma004,#spy001,#spy002,#spy003,#heat001,#heat002,#shannon001,#jyn001,#jyn002,#jyn003,#jyn004,#jyn005,#jyn006,#jyn007,#ebosi001,#ebosi002,#ebosi003,#furiosa006').addClass('notclicked');
+			$('span').hide();
+			$('#ebosi').show();
+			$('#ebosi004').removeClass('clicked3');
+			$('#ebosi004').css('cursor','zoom-out');
+		}else if($("li:has(#ebosi004)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+			$('li:has(#ebosi004)').removeClass('bigger');
+			$('#ebosi').hide();
+			$('#ebosi004').addClass('clicked3');
+		}
+	});
+	
+</script>
+
+</body>
+</html>
+
