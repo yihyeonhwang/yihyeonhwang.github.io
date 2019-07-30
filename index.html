@@ -164,9 +164,9 @@
 	    <img src="assets/images/abby002.gif" title="https://media1.giphy.com/media/l4Jz87hTidK270eiY/source.gif">
 	    <span id="abby">애비/우리들의 20세기/2016<br>Abby/20th Century Women/2016</span>
 	</div>
-		<div id="katniss001bigger">
-			<img src="assets/images/katniss001.gif" title="https://thumbs.gfycat.com/PopularSatisfiedGordonsetter-size_restricted.gif">
-			<span id="katniss">캣니스 에버딘/헝거게임/2012<br>Katniss Everdeen/The Hunger Games/2012</span>
+	<div id="katniss001bigger">
+		<img src="assets/images/katniss001.gif" title="https://thumbs.gfycat.com/PopularSatisfiedGordonsetter-size_restricted.gif">
+		<span id="katniss">캣니스 에버딘/헝거게임/2012<br>Katniss Everdeen/The Hunger Games/2012</span>
 	</div>
 		<div id="katniss002bigger"><img src="assets/images/katniss002.gif" title="https://i.gifer.com/7DsG.gif"><span id="katniss">캣니스 에버딘/헝거게임/2012<br>Katniss Everdeen/The Hunger Games/2012</span>
 	 </div>
@@ -371,10 +371,19 @@
   		return false;
 	});
 
+	$('.clicked3').click(function(){
+		$(body).on('scroll touchmove mousewheel', function(event) {
+  		event.preventDefault();
+  		event.stopPropagation();
+  		return false;
+	});
+	});
+
 	$('.biggercontents').click(function(){
 		$('#san001bigger,#san002bigger,#san003bigger,#san004bigger,#san005bigger,#furiosa001bigger,#furiosa002bigger,#furiosa003bigger,#furiosa004bigger,#furiosa005bigger,#furiosa006bigger,#abby001bigger,#abby002bigger,#abby003bigger,#katniss001bigger,#katniss002bigger,#katniss003bigger,#katniss004bigger,#katniss005bigger,#katniss006bigger,#nausicaa001bigger,#nausicaa002bigger,#nausicaa003bigger,#nausicaa004bigger,#nausicaa005bigger,#nausicaa006bigger,#nausicaa007bigger,#wasp001bigger,#wasp002bigger,#wasp003bigger,#wasp004bigger,#marvel001bigger,#marvel002bigger,#marvel003bigger,#marvel004bigger,#marvel005bigger,#eleven001bigger,#eleven002bigger,#eleven003bigger,#eleven004bigger,#eleven005bigger,#helen001bigger,#helen002bigger,#helen003bigger,#helen004bigger,#ladybird001bigger,#ladybird002bigger,#ladybird003bigger,#ladybird004bigger,#laura001bigger,#laura002bigger,#laura003bigger,#laura004bigger,#laura005bigger,#laura006bigger,#rey001bigger,#rey002bigger,#rey003bigger,#rey004bigger,#rey005bigger,#rey006bigger,#rey007bigger,#rey008bigger,#ghost001bigger,#ghost002bigger,#ghost003bigger,#roma001bigger,#roma002bigger,#roma003bigger,#roma004bigger,#spy001bigger,#spy002bigger,#spy003bigger,#heat001bigger,#heat002bigger,#heat003bigger,#jyn001bigger,#jyn002bigger,#jyn003bigger,#jyn004bigger,#jyn005bigger,#jyn006bigger,#jyn007bigger,#ebosi001bigger,#ebosi002bigger,#ebosi003bigger,#ebosi004bigger').hide();
 		$('.biggercontents').hide();
 		$('.biggercontents').off('scroll touchmove mousewheel');
+		$('body').off('scroll touchmove mousewheel');
 	});
 
 	$('#san001').click(function() {
@@ -536,22 +545,35 @@
 	});
 	
 	$('#abby002').click(function() {
-		if($("##abby002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		if($("#abby002").hasClass("clicked3")==true){
 			$('.biggercontents').show();
 			$('#abby002bigger').show();
-		}else if($('##abby002').hasClass('notclicked')==true){
-			$('##abby002').removeClass('notclicked').addClass('clicked1');
-		}else if($('##abby002').hasClass('clicked1')==true){
-			$('##abby002').removeClass('clicked1').addClass('clicked2');
-		}else if($('##abby002').hasClass('clicked2')==true){
-			$('##abby002').removeClass('clicked2').addClass('clicked3');
+		}else if($('#abby002').hasClass('notclicked')==true){
+			$('#abby002').removeClass('notclicked').addClass('clicked1');
+		}else if($('#abby002').hasClass('clicked1')==true){
+			$('#abby002').removeClass('clicked1').addClass('clicked2');
+		}else if($('#abby002').hasClass('clicked2')==true){
+			$('#abby002').removeClass('clicked2').addClass('clicked3');
+		}
+	});
+
+	$('#abby003').click(function() {
+		if($("#abby003").hasClass("clicked3")==true){
+			$('.biggercontents').show();
+			$('#abby003bigger').show();
+		}else if($('#abby003').hasClass('notclicked')==true){
+			$('#abby003').removeClass('notclicked').addClass('clicked1');
+		}else if($('#abby003').hasClass('clicked1')==true){
+			$('#abby003').removeClass('clicked1').addClass('clicked2');
+		}else if($('#abby003').hasClass('clicked2')==true){
+			$('#abby003').removeClass('clicked2').addClass('clicked3');
 		}
 	});
 	
 	$('#katniss001').click(function() {
 		if($("#katniss001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('.biggercontents').show();
-			$('katniss001bigger').show();
+			$('#katniss001bigger').show();
 		}else if($('#katniss001').hasClass('notclicked')==true){
 			$('#katniss001').removeClass('notclicked').addClass('clicked1');
 		}else if($('#katniss001').hasClass('clicked1')==true){
