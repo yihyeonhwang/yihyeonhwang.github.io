@@ -124,7 +124,6 @@ span{
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 45px;
 	color:white;
-	display: none;
 	background-color: black;
 }
 
@@ -176,13 +175,384 @@ span{
 	}
 
 	.clicked3{
-
+		opacity: 1;
+		cursor: zoom-in;
 	}
 
 	.bigger{
 		margin: auto;
 		width:81% !important;
 	}
+
+.biggercontents{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	cursor: zoom-out;
+
+}
+
+.biggercontents img{
+	opacity:1 !important;
+	width: 81%;
+}
+
+#san001bigger{
+	display:none;
+}
+
+#san002bigger{
+	display:none;
+}
+
+#san003bigger{
+	display:none;
+}
+
+#san004bigger{
+	display:none;
+}
+
+#san005bigger{
+	display:none;
+}
+
+#furiosa001bigger{
+	display:none;
+}
+
+#furiosa002bigger{
+	display:none;
+}
+
+#furiosa003bigger{
+	display:none;
+}
+
+#furiosa004bigger{
+	display:none;
+}
+
+#furiosa005bigger{
+	display:none;
+}
+
+#furiosa006bigger{
+	display:none;
+}
+
+#abby001bigger{
+	display:none;
+}
+
+#abby002bigger{
+	display:none;
+}
+
+#abby003bigger{
+	display:none;
+}
+
+#katniss001bigger{
+	display:none;
+}
+
+#katniss002bigger{
+	display:none;
+}
+
+#katniss003bigger{
+	display:none;
+}
+
+#katniss004bigger{
+	display:none;
+}
+
+#katniss005bigger{
+	display:none;
+}
+
+#katniss006bigger{
+	display:none;
+}
+
+#nausicaa001bigger{
+	display:none;
+}
+
+#nausicaa002bigger{
+	display:none;
+}
+
+#nausicaa003bigger{
+	display:none;
+}
+
+#nausicaa004bigger{
+	display:none;
+}
+
+#nausicaa005bigger{
+	display:none;
+}
+
+#nausicaa006bigger{
+	display:none;
+}
+
+#nausicaa007bigger{
+	display:none;
+}
+
+#wasp001bigger{
+	display:none;
+}
+
+#wasp002bigger{
+	display:none;
+}
+
+#wasp003bigger{
+	display:none;
+}
+
+#wasp004bigger{
+	display:none;
+}
+
+#marvel001bigger{/*캡틴마블*/
+	display:none;
+}
+
+#marvel002bigger{
+	display:none;
+}
+
+#marvel003bigger{
+	display:none;
+}
+
+#marvel004bigger{
+	display:none;
+}
+
+#marvel005bigger{
+	display:none;
+}
+
+#eleven001bigger{
+	display:none;
+}
+
+#eleven002bigger{
+	display:none;
+}
+
+#eleven003bigger{
+	display:none;
+}
+
+#eleven004bigger{
+	display:none;
+}
+
+#eleven005bigger{
+	display:none;
+}
+
+#helen001bigger{
+	display: none;
+}
+
+#helen002bigger{
+	display: none;
+}
+
+#helen003bigger{
+	display: none;
+}
+
+#helen004bigger{
+	display: none;
+}
+
+#ladybird001bigger{
+	display:none;
+}
+
+#ladybird002bigger{
+	display:none;
+}
+
+#ladybird003bigger{
+	display:none;
+}
+
+#ladybird004bigger{
+	display:none;
+}
+
+#laura001bigger{
+	display:none;
+}
+
+#laura002bigger{
+	display:none;
+}
+
+#laura003bigger{
+	display:none;
+}
+
+#laura004bigger{
+	display:none;
+}
+
+#laura005bigger{
+	display:none;
+}
+
+#laura006bigger{
+	display:none;
+}
+
+#rey001bigger{
+	display:none;
+}
+
+#rey002bigger{
+	display:none;
+}
+
+#rey003bigger{
+	display:none;
+}
+
+#rey004bigger{
+	display:none;
+}
+
+#rey005bigger{
+	display:none;
+}
+
+#rey006bigger{
+	display:none;
+}
+
+#rey007bigger{
+	display:none;
+}
+
+#rey008bigger{
+	display:none;
+}
+
+#ghost001bigger{
+	display:none;
+}
+
+#ghost002bigger{
+	display:none;
+}
+
+#ghost003bigger{
+	display:none;
+}
+
+#roma001bigger{
+	display:none;
+}
+
+#roma002bigger{
+	display:none;
+}
+
+#roma003bigger{
+	display:none;
+}
+
+#roma004bigger{
+	display:none;
+}
+
+#spy001bigger{
+	display:none;
+}
+
+#spy002bigger{
+	display:none;
+}
+
+#spy003bigger{
+	display:none;
+}
+
+#heat001bigger{
+	display:none;
+}
+
+#heat002bigger{
+	display:none;
+}
+
+#shannon001bigger{
+	display:none;
+}
+
+#jyn001bigger{
+	display:none;
+}
+
+#jyn002bigger{
+	display:none;
+}
+
+#jyn003bigger{
+	display:none;
+}
+
+#jyn004bigger{
+	display:none;
+}
+
+#jyn005bigger{
+	display:none;
+}
+
+#jyn006bigger{
+	display:none;
+}
+
+#jyn007bigger{
+	display:none;
+}
+
+#jyn008bigger{
+	display:none;
+}
+
+#ebosi001bigger{
+	display:none;
+}
+
+#ebosi002bigger{
+	display:none;
+}
+
+#ebosi003bigger{
+	display:none;
+}
+
+#ebosi004bigger{
+	display:none;
+}
+
 
 @media screen and (min-width: 300px){
 	.contents li{
