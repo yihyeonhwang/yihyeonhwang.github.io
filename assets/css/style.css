@@ -73,11 +73,6 @@ th {
   text-align: left;
 }
 
-@FONT-FACE{
-	font-family:'Noto Sans KR';
-	src:url(assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf);
-}
-
 /**/
 
 body{
@@ -116,7 +111,7 @@ img{
 }
 
 p{ /*작업제목, 설명이 포함되어있음*/
-	font-style: sans-serif;
+	font-family: sans-serif;
 	color: white;
 	text-align: center;
 	color: #95A5A6;
@@ -127,8 +122,8 @@ span{
 	position:fixed;
 	bottom: 10px;
 	left: 10px;
-	font-family: 'Noto Sans KR', sans-serif;
-	font:'Noto Sans KR';
+	font-family:san-serif;
+	font-weight:bold;
 	font-size: 45px;
 	color:white;
 	background-color: black;
