@@ -111,6 +111,7 @@ img{
 }
 
 p{ /*작업제목, 설명이 포함되어있음*/
+	font-style: sans-serif;
 	color: white;
 	text-align: center;
 	color: #95A5A6;
@@ -121,6 +122,7 @@ span{
 	position:fixed;
 	bottom: 10px;
 	left: 10px;
+	font-style: sans-serif;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 45px;
 	color:white;
