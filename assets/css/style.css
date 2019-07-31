@@ -73,6 +73,11 @@ th {
   text-align: left;
 }
 
+@FONT-FACE{
+font-family: 'AkzidenzGrotesk' san-serif;
+	url: (assets/Akzidenz-grotesk-black.ttf);
+}
+
 /**/
 
 body{
@@ -122,8 +127,7 @@ span{
 	position:fixed;
 	bottom: 10px;
 	left: 10px;
-	font-family: san-serif;
-	font-weight: bold; 
+	font-family: font-family: 'AkzidenzGrotesk' san-serif;
 	font-size: 45px;
 	color:white;
 	background-color: black;
