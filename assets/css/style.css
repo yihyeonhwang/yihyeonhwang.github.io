@@ -139,6 +139,7 @@ span{
 	left: 10px;
 	bottom: 10px;
 	opacity: 1 !important;
+        z-index: 5000 !important;
 }
 
 #introtext{ /*시작할 때 뜨는 텍스트*/
