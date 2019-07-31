@@ -122,9 +122,9 @@ span{
 	position:fixed;
 	bottom: 10px;
 	left: 10px;
-	font-family:san-serif;
-	font-weight:bold;
-	font-size: 45px;
+	font-family: san-serif;
+	font-weight: bold; 
+	font-size: 100px;
 	color:white;
 	background-color: black;
 }
