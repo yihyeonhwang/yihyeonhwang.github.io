@@ -134,7 +134,7 @@ span{
 }
 
 #sanimg{
-	display: none;
+	display: block;
 	position:fixed;
 	left: 10px;
 	bottom: 10px;
