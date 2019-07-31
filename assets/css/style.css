@@ -73,6 +73,11 @@ th {
   text-align: left;
 }
 
+@FONT-FACE{
+	font-family:'Noto Sans KR';
+	src:url(assets/fonts/Noto_Sans_KR/NotoSansKR-Medium.otf);
+}
+
 /**/
 
 body{
@@ -124,6 +129,7 @@ span{
 	left: 10px;
 	font-style: sans-serif;
 	font-family: 'Noto Sans KR', sans-serif;
+	font:'Noto Sans KR'
 	font-size: 45px;
 	color:white;
 	background-color: black;
