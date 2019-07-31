@@ -133,6 +133,13 @@ span{
 	background-color: black;
 }
 
+#san{
+	display: none;
+	position:fixed;
+	left: 10px;
+	bottom: 10px;
+}
+
 #introtext{ /*시작할 때 뜨는 텍스트*/
 	display: flex;
 	justify-content: center;
