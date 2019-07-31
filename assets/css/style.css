@@ -136,8 +136,7 @@ span{
 #sanimg{
 	display: block;
 	position:fixed;
-        width: 25vw
-	left: 10px;
+        width: 25vw;
 	bottom: 10px;
 	opacity: 1 !important;
         z-index: 5000 !important;
