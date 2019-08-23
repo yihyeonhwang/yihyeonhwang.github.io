@@ -56,6 +56,8 @@ html {
 
 img,
 video {
+	height: auto;
+	width: 100%;
 }
 
 iframe {
@@ -73,18 +75,13 @@ th {
   text-align: left;
 }
 
-@FONT-FACE{
-font-family: 'AkzidenzGrotesk' san-serif;
-	url: (assets/Akzidenz-grotesk-black.ttf);
-}
-
 /**/
 
 body{
 	background-color: black;
 }
 
-img{
+video{
 	height: auto;
 	width: 100%;
 	opacity:0.1;
@@ -93,8 +90,9 @@ img{
 .intro{
 	display: block;
 	position: fixed;
-	top: 47%;
-	left: 44%;
+	top: 43%;
+	left: 43%;
+	width: 15vw !important;
 	z-index:5000 !important;
 }
 
@@ -105,18 +103,21 @@ img{
 .instruction{
 	display:none;
 	position: fixed;
-	top: 45%;
-	left: 38%;
+	top: 43%;
+	left: 35%;
+	width: 30vw !important;
 	z-index:5000 !important;
 }
 
-#instructiontext{
-	font-size: 15px;
-	color:white;
+#introimg{
+	opacity: 1 !important;
+}
+
+#instructionimg{
+	opacity: 1 !important;
 }
 
 p{ /*작업제목, 설명이 포함되어있음*/
-	font-family: sans-serif;
 	color: white;
 	text-align: center;
 	color: #95A5A6;
@@ -127,28 +128,22 @@ span{
 	position:fixed;
 	bottom: 10px;
 	left: 10px;
-	font-family: font-family: 'AkzidenzGrotesk' san-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 45px;
 	color:white;
 	background-color: black;
 }
 
-#sanimg{
-	display: block;
-	position:fixed;
-        width: 40vw;
-	bottom: 10px;
+#refreshicon{
+	display: none;
+	position: fixed;
+	bottom: 45px;
+	right: 20px;
+	width: 35px !important;
+	height: 35px !important;
 	opacity: 1 !important;
-        z-index: 5000 !important;
-}
-
-#introtext{ /*시작할 때 뜨는 텍스트*/
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	font-size: 15px;
-	padding-top: 10px;
-	padding-left: 20px;
+	z-index: 5000 !important;
+	cursor: pointer;
 }
 
 #infobutton{ /*클릭하면 작업제목과 설명이 나오는 버튼*/
@@ -179,14 +174,17 @@ span{
 }
 
 	.notclicked{
+		opacity: 0.1;
 	}
 
 	.clicked1{
 		opacity: 0.5;
+		cursor: pointer;
 	}
 
 	.clicked2{
 		opacity: 0.75;
+		cursor: pointer;
 	}
 
 	.clicked3{
@@ -211,9 +209,18 @@ span{
 
 }
 
-.biggercontents img{
+.biggercontents video{
 	opacity:1 !important;
 	width: 81%;
+}
+
+.textimg{
+	height: 12vw !important;
+	width: auto !important;
+	position:fixed;
+	left: 10px;
+	bottom: 10px;
+	opacity: 1 !important;
 }
 
 #san001bigger{
